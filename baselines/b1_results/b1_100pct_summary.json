@@ -1,0 +1,16 @@
+{
+  "experiment": "B1-100",
+  "question_count": 1061,
+  "closed_count": 416,
+  "open_count": 645,
+  "closed_accuracy": 0.47596153846153844,
+  "open_recall": 0.3906992404666823,
+  "open_f1": 0.07437670151602169,
+  "mean_llm_prefill_ms": 517.0649711488995,
+  "mean_vision_encoding_ms": 26.698842937798638,
+  "mean_total_inference_ms": 2117.3708996889636,
+  "mean_generated_tokens": 25.66258246936852,
+  "mean_peak_memory_sum_gib": 14.930089008122767,
+  "max_peak_memory_sum_gib": 14.933524131774902,
+  "generation_limit_count": 54
+}
