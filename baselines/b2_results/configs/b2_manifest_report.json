@@ -1,0 +1,24 @@
+{
+  "experiment": "B2_FastV",
+  "status": "PASS",
+  "source_test_json": "/kaggle/input/datasets/aqilababy/slaek-data/Slake1.0/test.json",
+  "question_manifest": "/kaggle/working/B2_FastV/manifests/b2_slake_official_test_english.jsonl",
+  "expanded_manifest": "/kaggle/working/B2_FastV/manifests/b2_fastv_3183_manifest.jsonl",
+  "language": "en",
+  "split": "official_test",
+  "questions": 1061,
+  "closed_questions": 416,
+  "open_questions": 645,
+  "retentions": [
+    75,
+    50,
+    25
+  ],
+  "retained_visual_tokens": {
+    "75": 432,
+    "50": 288,
+    "25": 144
+  },
+  "total_predictions": 3183,
+  "metrics_module": "/kaggle/working/B2_FastV/b2_metrics.py"
+}

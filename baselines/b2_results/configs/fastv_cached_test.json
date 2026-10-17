@@ -1,0 +1,71 @@
+{
+  "experiment": "B2_FastV",
+  "test": "tiny_mistral_cached_decode",
+  "status": "PASS",
+  "pruning_after_layer": 2,
+  "original_sequence_length": 592,
+  "original_visual_tokens": 576,
+  "native_prefill_max_logit_error": 2.384185791015625e-07,
+  "native_decode_max_logit_error": 0.0,
+  "native_equivalence_steps": 8,
+  "native_equivalence": true,
+  "heterogeneous_cache_lengths_verified": true,
+  "original_rope_positions_preserved": true,
+  "decoder_cache_growth_verified": true,
+  "retentions_tested": [
+    75,
+    50,
+    25
+  ],
+  "results": {
+    "75": {
+      "retained_visual_tokens": 432,
+      "prefill_cache_lengths": [
+        592,
+        592,
+        448,
+        448
+      ],
+      "decode_steps": 3,
+      "final_cache_lengths": [
+        595,
+        595,
+        451,
+        451
+      ]
+    },
+    "50": {
+      "retained_visual_tokens": 288,
+      "prefill_cache_lengths": [
+        592,
+        592,
+        304,
+        304
+      ],
+      "decode_steps": 3,
+      "final_cache_lengths": [
+        595,
+        595,
+        307,
+        307
+      ]
+    },
+    "25": {
+      "retained_visual_tokens": 144,
+      "prefill_cache_lengths": [
+        592,
+        592,
+        160,
+        160
+      ],
+      "decode_steps": 3,
+      "final_cache_lengths": [
+        595,
+        595,
+        163,
+        163
+      ]
+    }
+  },
+  "full_7b_model_tested": false
+}

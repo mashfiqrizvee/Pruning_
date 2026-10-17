@@ -1,0 +1,16 @@
+{
+  "experiment": "B2_FastV",
+  "status": "PASS",
+  "source": "B1 Cell 11B",
+  "source_notebook": "baselines/b1_results/b1-benchmark-final.ipynb",
+  "module": "/kaggle/working/B2_FastV/b2_metrics.py",
+  "normalization": "B1 normalize_answer",
+  "closed_yes_no": "B1 leading yes/no extraction",
+  "closed_categorical": "B1 normalized exact match",
+  "open_scoring": "B1 Counter token-overlap precision recall F1",
+  "closed_unit_tests": 8,
+  "open_unit_tests": 4,
+  "ground_truth_self_tests": 1061,
+  "semantic_review": false,
+  "llm_judge": false
+}

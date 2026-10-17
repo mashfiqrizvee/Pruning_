@@ -1,0 +1,20 @@
+{
+  "experiment": "B2_FastV",
+  "test": "attention_guided_visual_token_selection",
+  "status": "PASS",
+  "pruning_after_layer": 2,
+  "visual_tokens_original": 576,
+  "retained_visual_tokens": {
+    "75": 432,
+    "50": 288,
+    "25": 144
+  },
+  "causal_attention_test": true,
+  "attention_sensitive_ranking_test": true,
+  "all_text_tokens_preserved": true,
+  "original_token_order_preserved": true,
+  "original_position_ids_preserved": true,
+  "physical_hidden_state_gather_test": true,
+  "reduced_causal_mask_test": true,
+  "seven_billion_model_tested": false
+}

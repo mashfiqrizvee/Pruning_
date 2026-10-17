@@ -1,0 +1,22 @@
+{
+  "model_id": "microsoft/llava-med-v1.5-mistral-7b",
+  "revision": "91bb16c122001ddc9cf1fd36ce1dae09448943a2",
+  "snapshot_path": "/tmp/b2_llava_med_hf_cache/models--microsoft--llava-med-v1.5-mistral-7b/snapshots/91bb16c122001ddc9cf1fd36ce1dae09448943a2",
+  "cache_dir": "/tmp/b2_llava_med_hf_cache",
+  "model_type": "llava_mistral",
+  "num_hidden_layers": 32,
+  "hidden_size": 4096,
+  "vision_tower": "openai/clip-vit-large-patch14-336",
+  "shard_names": [
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors"
+  ],
+  "shard_count": 4,
+  "total_weight_bytes": 15132534160,
+  "indexed_tensor_count": 686,
+  "vision_tower_tensor_count": 391,
+  "projector_tensor_count": 4,
+  "checkpoint_verified": true
+}

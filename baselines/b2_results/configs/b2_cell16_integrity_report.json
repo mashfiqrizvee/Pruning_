@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "prediction_count": 3183,
+  "unique_questions": 1061,
+  "retentions": [
+    75,
+    50,
+    25
+  ],
+  "counts": {
+    "75": 1061,
+    "50": 1061,
+    "25": 1061
+  },
+  "answer_types": {
+    "75": {
+      "open": 645,
+      "closed": 416
+    },
+    "50": {
+      "open": 645,
+      "closed": 416
+    },
+    "25": {
+      "open": 645,
+      "closed": 416
+    }
+  },
+  "scoring_checks": 3183,
+  "max_generated_tokens_observed": 64,
+  "checkpoint_sha256": "71092631a01a4c4223f30802dabd39e66dd4d92a6567b5c6903fad901a13fe58",
+  "manifest_alignment": true,
+  "heterogeneous_cache_consistency": true,
+  "b1_metric_recalculation": true
+}

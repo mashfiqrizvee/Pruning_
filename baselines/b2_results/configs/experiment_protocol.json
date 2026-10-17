@@ -1,0 +1,57 @@
+{
+  "experiment": "B2_FastV",
+  "model_id": "microsoft/llava-med-v1.5-mistral-7b",
+  "model_revision": "91bb16c122001ddc9cf1fd36ce1dae09448943a2",
+  "method": "FastV",
+  "pruning_after_layer": 2,
+  "num_decoder_layers": 32,
+  "original_visual_tokens": 576,
+  "retention_percentages": [
+    75,
+    50,
+    25
+  ],
+  "retained_visual_tokens": {
+    "75": 432,
+    "50": 288,
+    "25": 144
+  },
+  "dataset": "SLAKE 1.0",
+  "split": "official_test",
+  "language": "en",
+  "test_json": "/kaggle/input/datasets/aqilababy/slaek-data/Slake1.0/test.json",
+  "images_root": "/kaggle/input/datasets/aqilababy/slaek-data/Slake1.0/imgs",
+  "total_test_questions": 2094,
+  "english_test_questions": 1061,
+  "closed_questions": 416,
+  "open_questions": 645,
+  "expected_predictions": 3183,
+  "decoding": {
+    "strategy": "greedy",
+    "max_new_tokens": 64,
+    "temperature": null,
+    "do_sample": false
+  },
+  "metrics": {
+    "source": "B1 Cell 11B",
+    "source_file": "baselines/b1_results/b1-benchmark-final.ipynb",
+    "normalization": "Lowercase, trim, replace hyphens with spaces, remove punctuation, collapse whitespace",
+    "closed_yes_no": "Extract leading yes/no from normalized prediction and compare with reference",
+    "closed_categorical": "Normalized exact match only",
+    "open": "Counter-based token overlap: precision, recall, F1",
+    "manual_semantic_grading": false,
+    "llm_as_judge": false
+  },
+  "hardware": [
+    {
+      "index": 0,
+      "name": "Tesla T4",
+      "total_memory_gib": 14.562
+    },
+    {
+      "index": 1,
+      "name": "Tesla T4",
+      "total_memory_gib": 14.562
+    }
+  ]
+}

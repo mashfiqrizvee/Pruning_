@@ -1,0 +1,50 @@
+{
+  "experiment": "B2_FastV",
+  "test": "tiny_mistral_fastv_prefill",
+  "status": "PASS",
+  "torch_native_max_logit_error": 0.0,
+  "native_unpruned_equivalence": true,
+  "pruning_after_layer": 2,
+  "original_sequence_length": 592,
+  "original_visual_tokens": 576,
+  "results": {
+    "75": {
+      "visual_tokens": 432,
+      "short_length": 448,
+      "layer_lengths": [
+        592,
+        592,
+        448,
+        448
+      ],
+      "last_absolute_position": 591
+    },
+    "50": {
+      "visual_tokens": 288,
+      "short_length": 304,
+      "layer_lengths": [
+        592,
+        592,
+        304,
+        304
+      ],
+      "last_absolute_position": 591
+    },
+    "25": {
+      "visual_tokens": 144,
+      "short_length": 160,
+      "layer_lengths": [
+        592,
+        592,
+        160,
+        160
+      ],
+      "last_absolute_position": 591
+    }
+  },
+  "original_rope_positions_preserved": true,
+  "all_text_tokens_preserved": true,
+  "physical_sequence_reduction_verified": true,
+  "heterogeneous_kv_cache_tested": false,
+  "full_7b_model_tested": false
+}

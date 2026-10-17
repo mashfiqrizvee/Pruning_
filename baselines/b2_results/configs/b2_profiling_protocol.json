@@ -1,0 +1,23 @@
+{
+  "experiment": "B2_FastV",
+  "status": "PASS",
+  "runner": "/kaggle/working/B2_FastV/scripts/b2_fastv_inference_runner.py",
+  "runner_sha256": "bfc3928cd84f5fbd51ca09a1287b6542e80620083aa39b8edd636f20c39a54e8",
+  "warmup_enabled": true,
+  "warmup_passes": 2,
+  "warmup_retentions": [
+    75,
+    50,
+    25
+  ],
+  "warmup_inferences": 6,
+  "warmup_predictions_saved": false,
+  "timing": "Synchronized wall-clock GPU inference",
+  "image_encoding_timed_separately": true,
+  "prefill_timed_separately": true,
+  "decoding_timed_separately": true,
+  "gpu_memory": "Per-device PyTorch peak allocation",
+  "b1_metrics": "Exact B1 Cell 11B",
+  "resume_verified": true,
+  "pilot_checkpoint_unchanged": true
+}

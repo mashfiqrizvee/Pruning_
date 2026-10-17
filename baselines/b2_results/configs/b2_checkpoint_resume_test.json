@@ -1,0 +1,19 @@
+{
+  "experiment": "B2_FastV",
+  "status": "PASS",
+  "pilot_predictions": 6,
+  "official_manifest_predictions": 3183,
+  "retentions": [
+    75,
+    50,
+    25
+  ],
+  "question_alignment_verified": true,
+  "b1_scoring_verified": true,
+  "cache_lengths_verified": true,
+  "resume_remaining": 0,
+  "redundant_model_loading": false,
+  "checkpoint_unchanged": true,
+  "pilot_checkpoint_sha256": "3ea8768f468356046ab3cdb3c757f755fdf7daafa0214955091d7e2b0b4e8676",
+  "runner": "/kaggle/working/B2_FastV/scripts/b2_fastv_inference_runner.py"
+}

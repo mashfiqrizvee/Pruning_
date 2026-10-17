@@ -1,0 +1,18 @@
+{
+  "python": "3.10.21",
+  "torch": "2.1.2+cu121",
+  "torchvision": "0.16.2+cu121",
+  "cuda_runtime": "12.1",
+  "transformers": "4.36.2",
+  "accelerate": "0.21.0",
+  "peft": "0.4.0",
+  "numpy": "1.26.4",
+  "python_executable": "/kaggle/working/B2_FastV/venv/bin/python",
+  "verification_passed": true,
+  "experiment": "B2_FastV",
+  "retentions": [
+    75,
+    50,
+    25
+  ]
+}

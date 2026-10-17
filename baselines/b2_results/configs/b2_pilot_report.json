@@ -1,0 +1,15 @@
+{
+  "experiment": "B2_FastV",
+  "status": "PASS",
+  "mode": "pilot",
+  "questions": 2,
+  "retentions": [
+    75,
+    50,
+    25
+  ],
+  "prediction_count": 6,
+  "checkpoint": "/kaggle/working/B2_FastV/predictions/b2_fastv_pilot_predictions.jsonl",
+  "runner": "/kaggle/working/B2_FastV/scripts/b2_fastv_inference_runner.py",
+  "scoring": "Exact B1 Cell 11B"
+}

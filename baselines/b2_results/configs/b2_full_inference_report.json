@@ -1,0 +1,35 @@
+{
+  "experiment": "B2_FastV",
+  "status": "COMPLETE",
+  "dataset": "SLAKE 1.0",
+  "split": "official_test",
+  "language": "en",
+  "model_id": "microsoft/llava-med-v1.5-mistral-7b",
+  "model_revision": "91bb16c122001ddc9cf1fd36ce1dae09448943a2",
+  "pruning_after_layer": 2,
+  "retentions": [
+    75,
+    50,
+    25
+  ],
+  "retained_visual_tokens": {
+    "75": 432,
+    "50": 288,
+    "25": 144
+  },
+  "questions": 1061,
+  "predictions": 3183,
+  "predictions_per_retention": {
+    "75": 1061,
+    "50": 1061,
+    "25": 1061
+  },
+  "scoring": "Exact B1 Cell 11B",
+  "greedy_max_new_tokens": 64,
+  "warmup_enabled": true,
+  "checkpoint": "/kaggle/working/B2_FastV/predictions/b2_fastv_full_predictions.jsonl",
+  "runner_sha256": "bfc3928cd84f5fbd51ca09a1287b6542e80620083aa39b8edd636f20c39a54e8",
+  "launch_started_utc": "2026-10-17T07:48:20.543726+00:00",
+  "launch_finished_utc": "2026-10-17T09:54:12.490621+00:00",
+  "validation": "PASS"
+}
