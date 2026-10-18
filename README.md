@@ -161,20 +161,6 @@ The B2 implementation was validated progressively before the full experiment:
 
 Illustrative real-model validation on SLAKE QID `11934` (reference `CT`): B2 75% and 50% generated `The image is taken using a computed tomography (CT) scan.`; at 25% it generated `The image is taken using a chest computed tomography (CT) scan.` The scoring rule still marks each as incorrect for exact categorical `CT` matching, consistently with B1.
 
-## Performance interpretation and limitations
-
-**The latency measurements should not be over-interpreted.** B2 calls decoder layers individually, captures full attention at the selection layer, handles heterogeneous per-layer caches and performs token selection/gather. B1 uses its own inference path. As a result:
-
-- The measurements are actual recorded execution timings, but the two methods' `total_inference_ms` fields have **not been demonstrated to share fully identical instrumentation boundaries**.
-- The **B2 vision-preparation timing** is broader than B1's isolated vision-encoder timing, so the corresponding means cannot be compared as if they were the same operation.
-- Answer lengths differ between methods and naturally affect autoregressive decoding time. One should normalize or stratify by token counts before assigning a total-time difference to pruning alone.
-- The B2 custom decode loop can introduce implementation overhead; the large total-latency gap does **not** isolate the cost of its attention-guided selection.
-- Pruning depth differs between B1 and B2; a matched-layer ablation would be needed to isolate the selection strategy.
-- GPU memory numbers include persistent **model parameters**. Summed independent GPU peaks are not necessarily simultaneous peaks. Neither electrical **power**, **energy**, nor measured **FLOPs** were collected for either benchmark; none are claimed here.
-- Scores are based on a deliberately strict textual scorer. OPEN F1 is low partly because verbose generated answers are compared with short references using token-overlap F1.
-- No confidence intervals or paired significance tests are included here. Sub-one-percentage-point differences are descriptive, not proof of statistical improvement.
-- Findings are restricted to this model, medical dataset, checkpoint, prompts, and two-T4 runtime.
-
 ### Alignment with the FastV paper
 
 Original paper: [Chen et al., *An Image is Worth 1/2 Tokens After Layer 2: Plug-and-Play Acceleration for VLLM Inference*](https://arxiv.org/abs/2403.06764) (2024).
